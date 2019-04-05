@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/statisticTypeSelectionRadioButton"
+    android:layout_width="@dimen/panel_item_width"
+    android:layout_height="@dimen/panel_item_height"
+    android:background="@color/colorTransparent"
+    android:button="@null"
+    android:checked="false"
+    android:drawableLeft="@drawable/remember_me_checkbox_selector"
+    android:drawablePadding="@dimen/list_view_padding"
+    android:gravity="left|center_vertical"
+    android:padding="@dimen/list_view_padding"
+    android:text="@string/remember_me"
+    android:textColor="@color/colorLoginFont"
+    android:textSize="@dimen/text_size_normal">
+
+</CheckBox>

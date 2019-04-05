@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/statisticTypeContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/statistic_type_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/statistic_type_margin"
+        android:paddingRight="@dimen/statistic_type_margin"
+        android:weightSum="7">
+
+        <loglig.views.TeamTimeOutPanel
+            android:id="@+id/teamATTimeout"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_weight="1" />
+
+        <loglig.views.StatisticTypeItem
+            android:id="@+id/statStl"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+        <loglig.views.StatisticTypeItem
+            android:id="@+id/statAst"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+        <loglig.views.StatisticTypeItem
+            android:id="@+id/statPlus1"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+        <loglig.views.StatisticTypeItem
+            android:id="@+id/statPlus2"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+        <loglig.views.StatisticTypeItem
+            android:id="@+id/statPlus3"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+        <loglig.views.TeamTimeOutPanel
+            android:id="@+id/teamBTTimeout"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/statistic_type_margin"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/statistic_type_margin"
+        android:paddingRight="@dimen/statistic_type_margin"
+        android:weightSum="7">
+
+        <loglig.views.TeamFoulPanel
+            android:id="@+id/teamATFoul"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_weight="1" />
+
+        <loglig.views.StatisticTypeItem
+            android:id="@+id/statFoul"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+        <loglig.views.StatisticTypeItem
+            android:id="@+id/statTecf"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+        <loglig.views.StatisticTypeItem
+            android:id="@+id/statMiss1"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+        <loglig.views.StatisticTypeItem
+            android:id="@+id/statMiss2"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+        <loglig.views.StatisticTypeItem
+            android:id="@+id/statMiss3"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+        <loglig.views.TeamFoulPanel
+            android:id="@+id/teamBTFoul"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/statistic_type_margin"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/statistic_type_margin"
+        android:paddingRight="@dimen/statistic_type_margin"
+        android:weightSum="7">
+
+        <View
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_weight="1" />
+
+        <loglig.views.StatisticTypeItem
+            android:id="@+id/statOFoul"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+        <loglig.views.StatisticTypeItem
+            android:id="@+id/statTO"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+        <loglig.views.StatisticTypeItem
+            android:id="@+id/statBlk"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+        <loglig.views.StatisticTypeItem
+            android:id="@+id/statOReb"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+        <loglig.views.StatisticTypeItem
+            android:id="@+id/statDReb"
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="@dimen/statistic_type_width"
+            android:layout_height="@dimen/statistic_type_height"
+            android:layout_marginLeft="@dimen/statistic_type_margin"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

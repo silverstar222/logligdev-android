@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="loglig.is_uptown4.loglig">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name='android.permission.WAKE_LOCK' />
+
+    <application
+        android:name="loglig.context_provider.ApplicationContextProvider"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity
+            android:name="loglig.activities.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="loglig.activities.StatisticSelectionActivity"></activity>
+        <activity android:name="loglig.activities.GameSelectionActivity"></activity>
+        <activity android:name="loglig.activities.PlayersSelectionActivity"></activity>
+        <activity android:name="loglig.activities.GameMonitoringActivity"></activity>
+        <activity android:name="loglig.activities.GameSettingsActivity"></activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--<receiver android:name="loglig.background_tasks.AlarmBroadcastReceiver" />-->
+        <service
+            android:name="loglig.services.StatisticIntentService"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/player_info_layout_width"
+    android:layout_height="@dimen/game_status_panel_height"
+    android:background="@color/colorBlack">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/teamLogo"
+        android:layout_width="@dimen/item_on_game_status_panel_width"
+        android:layout_height="@dimen/item_on_game_status_panel_width"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/statistic_type_margin"
+        android:scaleType="fitXY"
+        fresco:placeholderImage="@drawable/team_icon_holder" />
+
+    <TextView
+        android:id="@+id/teamNameLogo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/team_name_panel_height"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/teamLogo"
+        android:layout_gravity="center_horizontal"
+        android:gravity="top|center_horizontal"
+        android:text="@string/team"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/player_selection_ui_team_font_size"
+        android:textStyle="bold"
+        android:padding="2dp"/>
+
+</RelativeLayout>

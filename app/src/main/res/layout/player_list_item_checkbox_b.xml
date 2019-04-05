@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/playerSelectionRadioButton"
+    android:layout_width="@dimen/player_selection_ui_list_checkbox_width"
+    android:layout_height="@dimen/player_selection_ui_item_height"
+    android:background="@color/playerNotSelected"
+    android:button="@null"
+    android:checked="false"
+          android:focusable="false"
+          android:focusableInTouchMode="false"
+          android:clickable="false"
+
+    android:drawableEnd="@drawable/app_checkbox"
+    android:drawablePadding="@dimen/list_view_padding"
+    android:drawableRight="@drawable/app_checkbox"
+    android:gravity="right|center_vertical"
+    android:paddingRight="@dimen/list_view_padding"
+    android:paddingEnd="@dimen/list_view_padding"
+    android:text="## Player Name"
+    android:textColor="@color/playerFontNotSelected"
+    android:textSize="@dimen/player_selection_ui_font_size">
+
+</CheckBox>

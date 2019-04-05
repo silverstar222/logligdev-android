@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/statisticTypeSelectionRadioButton"
+    android:layout_width="@dimen/statistic_selection_grid_view_item_width"
+    android:layout_height="@dimen/statistic_selection_item_height"
+    android:background="@color/presetSelected"
+    android:button="@null"
+    android:checked="false"
+    android:drawableLeft="@drawable/app_checkbox"
+    android:drawablePadding="@dimen/list_view_padding"
+    android:drawableStart="@drawable/app_checkbox"
+    android:gravity="start|center_vertical"
+    android:paddingLeft="@dimen/statistic_selection_list_view_padding"
+    android:paddingStart="@dimen/statistic_selection_list_view_padding"
+    android:text="@string/statistic_default"
+    android:textColor="@color/presetFontNotSelected"
+    android:textSize="@dimen/statistic_selection_font_size">
+
+</CheckBox>

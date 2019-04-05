@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/item_on_game_status_panel_width"
+    android:layout_height="@dimen/game_status_panel_height"
+    android:background="@color/colorTransparent80">
+
+    <TextView
+        android:id="@+id/teamScore"
+        android:layout_width="@dimen/item_on_game_status_panel_width"
+        android:layout_height="@dimen/game_status_panel_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/padding_layout_normal"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="1dp"
+        android:text="000"
+        android:textColor="@color/colorWhite"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/game_status_panel_text_size"
+        android:textStyle="bold" />
+
+</RelativeLayout>

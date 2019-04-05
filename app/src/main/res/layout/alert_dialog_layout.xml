@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_layout_medium"
+    android:background="@color/colorBlack">
+
+    <TextView
+        android:id="@+id/alertMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_normal"
+        android:text="Alert Message"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/alertImage"
+        android:layout_toEndOf="@+id/alertImage"
+        android:maxLines="1"
+        android:gravity="center"
+        android:layout_above="@+id/alertButtonOK" />
+
+    <Button
+        android:id="@+id/alertButtonOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_normal"
+        android:background="@drawable/app_button_orange"
+        android:layout_below="@+id/alertImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/padding_in_dialog_layout"
+        android:layout_marginBottom="@dimen/padding_in_dialog_layout"/>
+
+    <ImageView
+        android:id="@+id/alertImage"
+        android:layout_width="@dimen/dialog_image_size"
+        android:layout_height="@dimen/dialog_image_size"
+        android:src="@drawable/alert_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

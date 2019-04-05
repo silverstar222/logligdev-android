@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/current_statistic_panel_height"
+    android:orientation="horizontal"
+    android:padding="@dimen/current_statistic_panel_padding">
+
+    <!-- Player Info-->
+    <TextView
+        android:id="@+id/currGameStatisticPlayerNumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/current_statistic_item_height"
+        android:layout_marginLeft="@dimen/current_statistic_item_margin"
+        android:layout_marginStart="@dimen/current_statistic_item_margin"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/number_default"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="bold"/>
+
+    <!-- Statistic Type -->
+    <TextView
+        android:id="@+id/currGameStatType"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/current_statistic_item_height"
+        android:layout_marginLeft="@dimen/current_statistic_item_margin"
+        android:layout_marginStart="@dimen/current_statistic_item_margin"
+        android:layout_weight="1"
+        android:background="@drawable/statistic_type_neutral_button"
+        android:gravity="center"
+        android:text="@string/statistic_default"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="bold"/>
+
+    <!-- Time Segment  -->
+    <RelativeLayout
+        android:id="@+id/playByPlaycurrentStatTimeSegment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/current_statistic_item_margin"
+        android:layout_marginStart="@dimen/current_statistic_item_margin"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/playByPlayCurrentStatTimeSegmentText"
+            android:layout_width="@dimen/player_info_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/time_segment"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_normal3"/>
+
+        <TextView
+            android:id="@+id/playByPlayCurrentStatTimeStampText"
+            android:layout_width="@dimen/player_info_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="@string/init_timer"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_normal3"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/currentGameStatTypeIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/current_statistic_item_margin"
+        android:layout_marginStart="@dimen/current_statistic_item_margin"
+        android:contentDescription="@string/empty_string"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/deletePlayByPlayStatItem"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/current_statistic_item_margin"
+        android:layout_marginLeft="@dimen/current_statistic_item_margin"
+        android:layout_marginRight="@dimen/current_statistic_item_margin"
+        android:layout_marginStart="@dimen/current_statistic_item_margin"
+        android:contentDescription="@string/empty_string"
+        android:scaleType="fitCenter"
+        android:src="@drawable/close_button"/>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_in_status_panel">
+
+    <LinearLayout
+        android:id="@+id/teamALayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <loglig.views.TeamLogoLayout
+            android:id="@+id/teamALogo"
+            android:layout_width="@dimen/player_info_layout_width"
+            android:layout_height="@dimen/game_status_panel_height" />
+
+        <loglig.views.TeamScorePanel
+            android:id="@+id/teamAScore"
+            android:layout_width="@dimen/item_on_game_status_panel_width"
+            android:layout_height="@dimen/game_status_panel_height"
+            android:layout_marginLeft="@dimen/logo_margin"
+            android:layout_marginStart="@dimen/logo_margin" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/timerPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/game_status_panel_height"
+        android:layout_marginLeft="@dimen/padding_in_status_panel"
+        android:layout_toLeftOf="@+id/teamBLayout"
+        android:layout_toRightOf="@+id/teamALayout">
+
+        <loglig.views.EndGamePanel
+            android:id="@+id/endGameButtonLayout"
+            android:layout_width="@dimen/clock_start_pause_size"
+            android:layout_height="@dimen/clock_start_pause_size"
+            android:layout_toLeftOf="@+id/gameTimer" />
+
+        <loglig.views.TimerPanel
+            android:id="@+id/gameTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center" />
+
+        <loglig.views.PlayPauseClockPanel
+            android:id="@+id/gameClockController"
+            android:layout_width="@dimen/clock_start_pause_size"
+            android:layout_height="@dimen/clock_start_pause_size"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/padding_in_status_panel"
+            android:layout_toRightOf="@+id/gameTimer" />
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="@dimen/item_on_game_status_panel_width"
+            android:layout_alignEnd="@+id/gameClockController"
+            android:layout_alignLeft="@+id/endGameButtonLayout"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/gameClockController"
+            android:layout_alignStart="@+id/endGameButtonLayout"
+            android:layout_below="@+id/gameTimer"
+            android:layout_centerHorizontal="true">
+
+            <loglig.views.AddNewTimeSegmentPanel
+                android:id="@+id/addNewTimeOver"
+                android:layout_width="@dimen/time_segment_item_width"
+                android:layout_height="@dimen/time_segment_panel_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+            <loglig.views.TimeSegmentPanel
+                android:id="@+id/timeSegmentPanel"
+                android:layout_width="@dimen/time_segment_panel_width"
+                android:layout_height="@dimen/time_segment_panel_height"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/teamBLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <loglig.views.TeamScorePanel
+            android:id="@+id/teamBScore"
+            android:layout_width="@dimen/item_on_game_status_panel_width"
+            android:layout_height="@dimen/game_status_panel_height"
+            android:layout_marginEnd="@dimen/logo_margin"
+            android:layout_marginRight="@dimen/logo_margin" />
+
+        <loglig.views.TeamLogoLayout
+            android:id="@+id/teamBLogo"
+            android:layout_width="@dimen/player_info_layout_width"
+            android:layout_height="@dimen/game_status_panel_height" />
+    </LinearLayout>
+
+</RelativeLayout>

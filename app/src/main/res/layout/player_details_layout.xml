@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="@dimen/player_details_width"
+                android:layout_height="@dimen/player_details_height"
+                android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:id="@+id/playerDetailsSummary"
+        android:layout_width="@dimen/player_details_width"
+        android:layout_height="@dimen/player_details_top_layout_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/player_details_border"
+        android:padding="@dimen/player_details_margin">
+
+        <loglig.views.CircularImageView
+            android:id="@+id/playerDetailsImage"
+            android:layout_width="@dimen/player_details_image_size"
+            android:layout_height="@dimen/player_details_image_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorBlack"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/player_details_image_size"
+            android:layout_alignBottom="@+id/playerDetailsImage"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/playerDetailsImage"
+            android:layout_toLeftOf="@+id/relativeLayout"
+            android:layout_toRightOf="@+id/playerDetailsImage"
+            android:layout_toStartOf="@+id/relativeLayout"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/player_details_margin"
+            android:paddingLeft="@dimen/player_details_margin"
+            android:paddingRight="@dimen/player_details_margin"
+            android:paddingStart="@dimen/player_details_margin">
+
+            <TextView
+                android:id="@+id/playerDetailsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/player_full_name"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/player_details_text_size"/>
+
+            <TextView
+                android:id="@+id/playerDetailsTeam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/player_details_text_size"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="@dimen/player_details_image_size"
+            android:layout_height="@dimen/player_details_image_size"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="@dimen/player_details_margin"
+            android:layout_marginRight="@dimen/player_details_margin">
+
+            <EditText
+                android:id="@+id/playerDetailsShirtNumber"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorBlack"
+                android:enabled="false"
+                android:gravity="top|bottom|start"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLength="3"
+                android:padding="5dp"
+                android:text="@string/number_default"
+                android:textColor="@color/colorWhite"
+                android:textSize="38sp"/>
+
+            <ImageView
+                android:id="@+id/editPlayerShirtNumberImageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:src="@drawable/edit_icon"/>
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/playerDetailsPersonalStatisticGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/playerDetailsImage"
+            android:layout_marginTop="5dp"
+            android:columnWidth="@dimen/player_details_personal_statistic_statistic_layout_width"
+            android:horizontalSpacing="20dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/playerDetailsFieldSummary"
+        android:layout_width="@dimen/player_details_width"
+        android:layout_height="@dimen/player_details_bottom_layout_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/playerDetailsSummary"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/player_details_border"
+        android:padding="@dimen/player_details_margin">
+
+        <ImageView
+            android:id="@+id/playerDetailsCourtImage"
+            android:layout_width="@dimen/player_details_width"
+            android:layout_height="@dimen/player_details_bottom_layout_height"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/court_basketball"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/closePlayerDetailsButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/close_button"/>
+
+</RelativeLayout>

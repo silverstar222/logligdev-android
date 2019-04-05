@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/playerSwipeLayoutB"
+    android:layout_width="@dimen/player_info_layout_width"
+    android:layout_height="@dimen/player_info_layout_height"
+    android:background="@color/colorBlack"
+    android:clickable="true"
+    android:focusable="true"
+    android:longClickable="true"
+    app:drag_edge="right">
+
+    <RelativeLayout
+        android:id="@+id/playerInfoBottomLayoutB"
+        android:layout_width="@dimen/player_info_swiped_layout_width"
+        android:layout_height="@dimen/player_info_layout_height"
+        android:background="@color/colorBlack">
+
+        <Button
+            android:id="@+id/openTeamBplayerList"
+            style="@style/button_text"
+            android:layout_width="@dimen/player_info_swiped_layout_width"
+            android:layout_height="@dimen/player_info_layout_height"
+            android:background="@color/teamBEndColor"
+            android:padding="10dp"
+            android:text="@string/tap_to_switch_player"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/playerInfoContainerB"
+        android:layout_width="@dimen/player_info_layout_width"
+        android:layout_height="@dimen/player_info_layout_height"
+        android:background="@color/colorBlack"
+        android:orientation="horizontal"
+        android:padding="@dimen/player_info_layout_padding">
+
+        <loglig.views.CircularImageView
+            android:id="@+id/playerImageB"
+            android:layout_width="@dimen/player_image_size"
+            android:layout_height="@dimen/player_image_size"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorBlack"
+            android:visibility="invisible"
+            fresco:placeholderImage="@drawable/player_icon_holder"/>
+
+
+        <RelativeLayout
+            android:id="@+id/playerInfoLayoutB"
+            android:layout_width="@dimen/player_info_width"
+            android:layout_height="@dimen/player_info_layout_height"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/playerImageB"
+            android:layout_toStartOf="@+id/playerImageB"
+            android:padding="@dimen/player_info_layout_padding">
+
+            <TextView
+                android:id="@+id/playerNumberB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/dividerB"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:padding="3dp"
+                android:text="Swipe to"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_normal2" />
+
+            <View
+                android:id="@+id/dividerB"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:background="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/playerInfoB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dividerB"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:padding="1dp"
+                android:text="add player"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_normal3" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.daimajia.swipe.SwipeLayout>

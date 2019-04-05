@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F4F4F4</color>
+    <color name="colorPrimaryLight">#9ebaef</color>
+    <color name="colorPrimaryLight2">#FFF5EE</color>
+    <color name="colorPrimaryDark">#FF4A6DAF</color>
+    <color name="colorAccent">#4AC5E3</color>
+    <color name="colorGreen">#5cb85c</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#b5b5b5</color>
+    <color name="colorGrayBackground">#F4F4F4</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlue">#4AC5E3</color>
+    <color name="colorBlueDark">#0695C4</color>
+    <color name="colorOrangeDisabled">#f9bb72</color>
+    <color name="colorOrangeDark">#F25E24</color>
+    <color name="colorOrangeCenter">#f57d4e</color>
+    <color name="colorOrangeLight">#F7A645</color>
+    <color name="colorGreenDark">#19A69B</color>
+    <color name="colorGreenCenter">#1DA992</color>
+    <color name="colorGreenLight">#1bc6b8</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorDarkRed">#B71C1C</color>
+    <!-- Statistic Type -->
+    <color name="colorPositiveStatisticStart">#F9EA3E</color>
+    <color name="colorPositiveStatisticCenter">#8CC249</color>
+    <color name="colorPositiveStatisticEnd">#50692B</color>
+    <color name="colorNegativeStatisticStart">#F39031</color>
+    <color name="colorNegativeStatisticCenter">#F65826</color>
+    <color name="colorNegativeStatisticEnd">#FC0D1B</color>
+    <color name="colorNeutralStatistic">#575757</color>
+    <!-- Transparent Colors -->
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorTransparent90">#90000000</color>
+    <color name="colorTransparent80">#80000000</color>
+    <color name="colorTransparent60">#60000000</color>
+    <color name="colorTransparent20">#20000000</color>
+    <!-- Team Colors -->
+    <color name="teamAStartColor">#F39031</color>
+    <color name="teamACenterColor">#F65B26</color>
+    <color name="teamAEndColor">#FC0D1B</color>
+    <color name="teamBStartColor">#2DB275</color>
+    <color name="teamBCenterColor">#21AC89</color>
+    <color name="teamBEndColor">#19A69B</color>
+    <!-- LogIn -->
+    <color name="colorLoginFont">#AAAAAA</color>
+    <color name="colorInputTextFieldBackground">#565656</color>
+    <!-- Statistic Set/Preset -->
+    <color name="presetSelected">#808080</color>
+    <color name="presetNotSelected">#575757</color>
+    <color name="presetFontNotSelected">#AAAAAA</color>
+    <color name="presetFontSelected">#FFFFFF</color>
+
+    <!-- Player Selection -->
+    <color name="playerSelected">#808080</color>
+    <color name="playerNotSelected">#575757</color>
+    <color name="playerFontNotSelected">#AAAAAA</color>
+    <color name="playerFontSelected">#FFFFFF</color>
+
+</resources>

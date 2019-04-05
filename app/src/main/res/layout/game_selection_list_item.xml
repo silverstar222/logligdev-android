@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/game_selection_list_row_height"
+    android:background="@color/colorNeutralStatistic"
+    android:clickable="true"
+    android:focusable="true"
+    android:longClickable="true">
+
+    <LinearLayout
+        android:layout_width="@dimen/game_selection_list_width"
+        android:layout_height="@dimen/game_selection_list_row_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/imageViewArrow"
+        android:layout_toStartOf="@+id/imageViewArrow"
+        android:background="@color/colorNeutralStatistic"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="5dp"
+            android:layout_height="@dimen/game_selection_list_row_height"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/orange_vertical_stripe" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/gameSelectionTeamLogoA"
+                android:layout_width="@dimen/game_selection_list_team_logo_size"
+                android:layout_height="@dimen/game_selection_list_team_logo_size"
+                android:layout_marginLeft="@dimen/game_selection_margin_in_item_layout"
+                android:layout_marginStart="@dimen/game_selection_margin_in_item_layout"
+                android:contentDescription="@string/team_logo_on_game_selection_screen"
+                android:scaleType="fitXY"
+                fresco:placeholderImage="@drawable/team_icon_holder" />
+
+            <TextView
+                android:id="@+id/gameSelectionTeamNameA"
+                android:layout_width="@dimen/game_selection_list_team_name_width"
+                android:layout_height="@dimen/game_selection_list_row_height"
+                android:layout_marginLeft="@dimen/game_selection_margin_in_item_layout"
+                android:layout_marginStart="@dimen/game_selection_margin_in_item_layout"
+                android:gravity="center_vertical"
+                android:text="@string/team_a"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/game_selection_game_team_font_size" />
+
+            <TextView
+                android:layout_width="@dimen/game_selection_list_item_height"
+                android:layout_height="@dimen/game_selection_list_row_height"
+                android:gravity="center"
+                android:text="@string/vs"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/gameSelectionTeamLogoB"
+                android:layout_width="@dimen/game_selection_list_team_logo_size"
+                android:layout_height="@dimen/game_selection_list_team_logo_size"
+                android:layout_marginLeft="@dimen/game_selection_margin_in_item_layout_2"
+                android:layout_marginStart="@dimen/game_selection_margin_in_item_layout_2"
+                android:contentDescription="@string/team_logo_on_game_selection_screen"
+                android:scaleType="fitXY"
+                fresco:placeholderImage="@drawable/team_icon_holder" />
+
+            <TextView
+                android:id="@+id/gameSelectionTeamNameB"
+                android:layout_width="@dimen/game_selection_list_team_name_width"
+                android:layout_height="@dimen/game_selection_list_row_height"
+                android:layout_marginLeft="@dimen/game_selection_margin_in_item_layout"
+                android:layout_marginStart="@dimen/game_selection_margin_in_item_layout"
+                android:gravity="center_vertical"
+                android:text="@string/team_b"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/game_selection_game_team_font_size" />
+
+            <TextView
+                android:id="@+id/gameSelectionGameInfo"
+                android:layout_width="@dimen/game_selection_list_team_name_width"
+                android:layout_height="@dimen/game_selection_list_row_height"
+                android:layout_marginLeft="@dimen/game_selection_margin_in_item_layout_2"
+                android:layout_marginStart="@dimen/game_selection_margin_in_item_layout_2"
+                android:gravity="center_vertical"
+                android:text="@string/game_info_default"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/game_selection_game_info_font_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewArrow"
+        android:layout_width="20dp"
+        android:layout_height="@dimen/panel_item_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/game_selection_list_padding"
+        android:layout_marginRight="@dimen/game_selection_list_padding"
+        android:src="@drawable/arrow_icon" />
+
+</RelativeLayout>

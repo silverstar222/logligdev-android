@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="@dimen/clock_start_pause_size">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/timer_setup_for_time_segment"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/game_status_panel_text_size"
+        android:textStyle="bold"
+        android:onClick="setNewTime"/>
+
+</RelativeLayout>

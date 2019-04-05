@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/player_selection_ui_list_view_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/settingsPanel"
+        android:layout_toStartOf="@+id/settingsPanel"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/playerSelectionTeamLogoA"
+            android:layout_width="@dimen/player_selection_ui_logo_size"
+            android:layout_height="@dimen/player_selection_ui_logo_size"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/statistic_type_margin"
+            android:scaleType="fitXY"
+            fresco:placeholderImage="@drawable/team_icon_holder" />
+
+        <TextView
+            android:id="@+id/playerSelectionTeamLogoNameA"
+            android:layout_width="@dimen/player_selection_ui_list_view_width"
+            android:layout_height="@dimen/player_selection_ui_team_name_height"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/team"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/player_selection_ui_font_size"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/teamListView1"
+            android:layout_width="@dimen/player_selection_ui_list_view_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/list_view_divider_height"
+            android:divider="@color/colorTransparent"
+            android:dividerHeight="@dimen/list_view_divider_height"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/settingsPanel"
+        android:layout_width="@dimen/player_selection_ui_list_view_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/list_view_divider_height"
+        android:layout_marginRight="@dimen/list_view_divider_height"
+        android:background="@color/colorTransparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_above="@+id/playerSelectionGameSettingsButton"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/app_button_orange">
+
+            <TextView
+                android:id="@+id/playerSelectionGameInfo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/player_selection_ui_top_panel_height"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/game_info"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/playerSelectionClockLayout"
+                android:layout_width="@dimen/player_selection_ui_clock_setting_panel_size"
+                android:layout_height="@dimen/player_selection_ui_clock_setting_panel_size"
+                android:layout_centerInParent="true"
+                android:background="@drawable/clock_settings_border">
+
+                <TextView
+                    android:id="@+id/playerSelectionClock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_horizontal"
+                    android:text="10:00"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/player_selection_ui_clock_font_size" />
+
+                <TextView
+                    android:id="@+id/playerSelectionClockTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/playerSelectionClock"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal|top"
+                    android:text="quarter minutes"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/clockSettingsPanel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/player_selection_ui_item_height"
+                android:layout_below="@+id/playerSelectionClockLayout"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <Button
+                    android:id="@+id/clockSettingsReduceMinutes"
+                    android:layout_width="@dimen/player_selection_ui_item_height"
+                    android:layout_height="@dimen/player_selection_ui_item_height"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/minus_icon" />
+
+                <Button
+                    android:id="@+id/clockSettingsAddMinutes"
+                    android:layout_width="@dimen/player_selection_ui_item_height"
+                    android:layout_height="@dimen/player_selection_ui_item_height"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/list_view_divider_height"
+                    android:background="@drawable/plus_icon" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/playerSelectionGameSettingsButton"
+            android:layout_width="@dimen/player_selection_ui_list_view_width"
+            android:layout_height="@dimen/player_selection_ui_item_height"
+            android:layout_above="@+id/playerSelectionStartGameButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/list_view_divider_height"
+            android:background="@drawable/app_button_orange"
+            android:text="@string/game_settings"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_normal" />
+
+        <Button
+            android:id="@+id/playerSelectionStartGameButton"
+            android:layout_width="@dimen/player_selection_ui_list_view_width"
+            android:layout_height="@dimen/player_selection_ui_item_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/list_view_divider_height"
+            android:background="@drawable/app_button_green"
+            android:text="@string/start"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_normal" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/player_selection_ui_list_view_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/settingsPanel"
+        android:layout_toRightOf="@+id/settingsPanel"
+        android:orientation="vertical">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/playerSelectionTeamLogoB"
+            android:layout_width="@dimen/player_selection_ui_logo_size"
+            android:layout_height="@dimen/player_selection_ui_logo_size"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/statistic_type_margin"
+            android:scaleType="fitXY"
+            fresco:placeholderImage="@drawable/team_icon_holder" />
+
+        <TextView
+            android:id="@+id/playerSelectionTeamLogoNameB"
+            android:layout_width="@dimen/player_selection_ui_list_view_width"
+            android:layout_height="@dimen/player_selection_ui_team_name_height"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/team"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/player_selection_ui_font_size"
+            android:textStyle="bold" />
+
+
+        <ListView
+            android:id="@+id/teamListView2"
+            android:layout_width="@dimen/player_selection_ui_list_view_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/list_view_divider_height"
+            android:divider="@color/colorTransparent"
+            android:dividerHeight="@dimen/list_view_divider_height"
+            android:scrollbars="none" />
+    </LinearLayout>
+</RelativeLayout>

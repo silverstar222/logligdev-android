@@ -1,0 +1,178 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <!-- Text property -->
+    <dimen name="text_padding">10dp</dimen>
+    <dimen name="text_size_normal">18sp</dimen>
+    <dimen name="text_size_normal2">20sp</dimen>
+    <dimen name="text_size_normal3">15sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_small2">11sp</dimen>
+    <dimen name="text_title_size">40sp</dimen>
+    <dimen name="text_title_size_big">60sp</dimen>
+    <dimen name="text_button_size2">35sp</dimen>
+
+    <!-- Button dimension-->
+    <dimen name="button_height">50dp</dimen>
+    <dimen name="button_size_minimum">50dp</dimen>
+    <dimen name="button_size_medium">80dp</dimen>
+    <dimen name="radio_button_size">30dp</dimen>
+
+    <dimen name="padding_layout_small">5dp</dimen>
+    <dimen name="padding_in_dialog_layout">20dp</dimen>
+    <dimen name="padding_in_dialog_layout_message">10dp</dimen>
+    <dimen name="padding_layout_normal">20dp</dimen>
+    <dimen name="padding_layout_large">100dp</dimen>
+    <dimen name="padding_layout_large2">150dp</dimen>
+    <dimen name="padding_layout_medium">40dp</dimen>
+
+    <dimen name="court_height">480dp</dimen>
+    <dimen name="court_width">640dp</dimen>
+    <dimen name="court_part_height">295dp</dimen>
+    <dimen name="court_part_width">320dp</dimen>
+    <dimen name="dialog_image_size">100dp</dimen>
+    <dimen name="player_info_width">140dp</dimen>
+    <dimen name="player_info_layout_width">225dp</dimen>
+    <dimen name="player_info_swiped_layout_width">110dp</dimen>
+    <dimen name="player_info_layout_height">100dp</dimen>
+    <dimen name="player_info_layout_padding">5dp</dimen>
+    <dimen name="list_view_divider_height">2dp</dimen>
+    <dimen name="list_view_padding">10dp</dimen>
+
+    <!-- Common items dimensions-->
+    <dimen name="common_top_panel_height">70dp</dimen>
+    <dimen name="common_top_panel_padding">10dp</dimen>
+
+    <dimen name="panel_width">600dp</dimen>
+    <dimen name="panel_item_width">250dp</dimen>
+    <dimen name="panel_item_height">45dp</dimen>
+    <dimen name="panel_icon_size">35dp</dimen>
+    <dimen name="panel_content_margin_top_bottom">60dp</dimen>
+    <dimen name="panel_margin_bottom_negative">-50dp</dimen>
+    <dimen name="input_view_inner_margin">10dp</dimen>
+
+    <!-- Sport Type panel -->
+    <dimen name="sport_type_panel_margin">30dp</dimen>
+    <dimen name="sport_type_content_margin_left_right">90dp</dimen>
+    <dimen name="sport_type_item_height">70dp</dimen>
+
+    <!-- Log In panel -->
+    <dimen name="login_content_margin_top_to_logo">140dp</dimen>
+    <dimen name="login_ball_icon_size">90dp</dimen>
+    <dimen name="login_item_margin">5dp</dimen>
+    <dimen name="logo_width">170dp</dimen>
+    <dimen name="logo_height">120dp</dimen>
+
+    <!-- Game Selection screen -->
+    <dimen name="list_top_margin">80dp</dimen>
+    <dimen name="game_selection_list_width">900dp</dimen>
+    <dimen name="game_selection_list_row_height">60dp</dimen>
+    <dimen name="game_selection_list_item_height">30dp</dimen>
+    <dimen name="game_selection_list_padding">5dp</dimen>
+    <dimen name="game_selection_list_team_logo_size">30dp</dimen>
+    <dimen name="game_selection_list_team_name_width">200dp</dimen>
+    <dimen name="game_selection_game_info_font_size">14sp</dimen>
+    <dimen name="game_selection_game_team_font_size">20sp</dimen>
+    <dimen name="game_selection_list_view_padding">30dp</dimen>
+    <dimen name="game_selection_margin_in_item_layout">10dp</dimen>
+    <dimen name="game_selection_margin_in_item_layout_2">30dp</dimen>
+
+    <!-- Statistic Selection Screen -->
+    <dimen name="statistic_selection_start_button_width">150dp</dimen>
+    <dimen name="statistic_selection_add_remove_button_width">146dp</dimen>
+    <dimen name="statistic_selection_item_height">40dp</dimen>
+    <dimen name="statistic_selection_preset_list_view_width">300dp</dimen>
+    <dimen name="statistic_selection_grid_view_width">600dp</dimen>
+    <dimen name="statistic_selection_grid_view_item_width">199dp</dimen>
+    <dimen name="statistic_selection_font_size">22sp</dimen>
+    <dimen name="statistic_selection_title_font_size">28sp</dimen>
+    <dimen name="statistic_selection_select_all_margin_left">302dp</dimen>
+    <dimen name="statistic_selection_items_margin">5dp</dimen>
+    <dimen name="statistic_selection_items_margin2">10dp</dimen>
+    <dimen name="statistic_selection_list_view_padding">30dp</dimen>
+    <dimen name="statistic_selection_grid_view_spacing">5dp</dimen>
+
+    <!-- Current statistic  -->
+    <dimen name="current_statistic_panel_width">480dp</dimen>
+    <dimen name="current_statistic_panel_height">50dp</dimen>
+    <dimen name="current_statistic_element_container_width">340dp</dimen>
+    <dimen name="current_statistic_element_container_height">100dp</dimen>
+    <dimen name="current_statistic_type_item_width">100dp</dimen>
+    <dimen name="current_statistic_item_width">100dp</dimen>
+    <dimen name="current_statistic_item_height">40dp</dimen>
+    <dimen name="current_statistic_item_margin">25dp</dimen>
+    <dimen name="current_statistic_panel_padding">4dp</dimen>
+    <dimen name="current_statistic_item_text_view_height">25dp</dimen>
+    <dimen name="current_statistic_item_text_view_width_2.3">66dp</dimen>
+    <dimen name="current_statistic_item_text_view_width_1.3">33dp</dimen>
+    <dimen name="current_statistic_y_location">0dp</dimen>
+
+    <!-- Status top panel -->
+    <dimen name="game_status_panel_height">150dp</dimen>
+    <dimen name="clock_height">50dp</dimen>
+    <dimen name="time_segment_panel_height">80dp</dimen>
+    <dimen name="time_segment_panel_width">200dp</dimen>
+    <dimen name="time_segment_item_width">50dp</dimen>
+    <dimen name="clock_width">250dp</dimen>
+    <dimen name="clock_container_width">250dp</dimen>
+    <dimen name="clock_start_pause_size">50dp</dimen>
+    <dimen name="clock_start_pause_margin">10dp</dimen>
+    <dimen name="clock_quarters_size">35dp</dimen>
+    <dimen name="clock_quarters_margin">10dp</dimen>
+    <dimen name="clock_controllers_margin">20dp</dimen>
+    <dimen name="item_on_game_status_panel_width">100dp</dimen>
+    <dimen name="team_name_panel_height">50dp</dimen>
+    <dimen name="team_info_container_panel_width">260dp</dimen>
+    <dimen name="game_status_panel_text_size">45sp</dimen>
+    <dimen name="timer_text_size">40dp</dimen>
+    <dimen name="time_segment_text_size">16sp</dimen>
+    <dimen name="padding_in_status_panel">5dp</dimen>
+    <dimen name="padding_for_time_segment">2dp</dimen>
+    <dimen name="logo_margin">60dp</dimen>
+
+    <!-- Statistic Panel-->
+    <dimen name="statistic_type_height">50dp</dimen>
+    <dimen name="statistic_type_width">90dp</dimen>
+    <dimen name="statistic_type_margin">10dp</dimen>
+    <dimen name="statistic_type_panel_height">190dp</dimen>
+    <dimen name="statistic_type_panel_width">710dp</dimen>
+    <dimen name="time_segment_font_text_view_height">20dp</dimen>
+    <dimen name="time_segment_font_text_view_width">45dp</dimen>
+
+    <!-- Player Details -->
+    <dimen name="player_details_width">405dp</dimen>
+    <dimen name="player_details_height">545dp</dimen>
+    <dimen name="player_details_top_layout_height">285dp</dimen>
+    <dimen name="player_details_bottom_layout_height">240dp</dimen>
+    <dimen name="player_details_image_size">80dp</dimen>
+    <dimen name="player_details_text_size">21sp</dimen>
+    <dimen name="player_details_margin">10dp</dimen>
+    <dimen name="player_details_personal_statistic_item_height">43dp</dimen>
+    <dimen name="player_details_personal_statistic_statistic_layout_width">100dp</dimen>
+    <dimen name="player_details_personal_statistic_statistic_points_width">70dp</dimen>
+    <dimen name="player_details_personal_statistic_width">40dp</dimen>
+    <dimen name="player_details_personal_statistic_statistic_height">21dp</dimen>
+    <dimen name="player_details_personal_statistic_text_size">15sp</dimen>
+    <dimen name="player_details_personal_statistic_points_text_size">30sp</dimen>
+    <dimen name="player_image_size">60dp</dimen>
+
+    <!-- Player Selection Screen -->
+    <dimen name="player_selection_ui_item_height">40dp</dimen>
+    <dimen name="player_selection_ui_list_view_width">300dp</dimen>
+    <dimen name="player_selection_ui_list_checkbox_width">300dp</dimen>
+    <dimen name="player_selection_ui_font_size">18sp</dimen>
+    <dimen name="player_selection_ui_logo_size">60dp</dimen>
+    <dimen name="player_selection_ui_team_name_height">40dp</dimen>
+    <dimen name="player_selection_ui_team_font_size">16sp</dimen>
+    <dimen name="player_selection_ui_top_panel_height">100dp</dimen>
+    <dimen name="player_selection_ui_top_panel_width">900dp</dimen>
+    <dimen name="player_selection_ui_top_panel_app_logo_width">300dp</dimen>
+    <dimen name="player_selection_ui_top_panel_app_logo_height">100dp</dimen>
+    <dimen name="player_selection_ui_setting_panel_height">300dp</dimen>
+    <dimen name="player_selection_ui_clock_setting_panel_size">150dp</dimen>
+    <dimen name="player_selection_ui_clock_font_size">50sp</dimen>
+
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gameMonitoringLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background">
+
+    <loglig.views.GameStatusTopPanel
+        android:id="@+id/gameStatusTopPanelContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/game_status_panel_height" />
+
+    <loglig.views.StatisticTypePanel
+        android:id="@+id/statisticTypePanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameStatusTopPanelContainer"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/courtContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statisticTypePanel"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/courtImage"
+            android:layout_width="@dimen/court_width"
+            android:layout_height="@dimen/court_height"
+            android:src="@drawable/court_basketball" />
+    </RelativeLayout>
+
+
+    <!-- Team A Layout -->
+    <LinearLayout
+        android:id="@+id/teamALayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gameStatusTopPanelContainer"
+        android:layout_marginTop="@dimen/statistic_type_margin"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/teamListA"
+            android:layout_width="@dimen/player_info_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_layout_small"
+            android:layout_marginRight="@dimen/padding_layout_small"
+            android:background="@color/colorNeutralStatistic"
+            android:divider="@color/teamACenterColor"
+            android:dividerHeight="@dimen/list_view_divider_height" />
+
+        <ListView
+            android:id="@+id/fullTeamListA"
+            android:layout_width="@dimen/player_info_layout_width"
+            android:layout_height="wrap_content"
+            android:background="@color/colorNeutralStatistic"
+            android:divider="@color/teamACenterColor"
+            android:dividerHeight="@dimen/list_view_divider_height"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <!-- Team B Layout -->
+    <LinearLayout
+        android:id="@+id/teamBLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gameStatusTopPanelContainer"
+        android:layout_marginTop="@dimen/statistic_type_margin"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/fullTeamListB"
+            android:layout_width="@dimen/player_info_layout_width"
+            android:layout_height="wrap_content"
+            android:background="@color/colorNeutralStatistic"
+            android:divider="@color/teamBCenterColor"
+            android:dividerHeight="@dimen/list_view_divider_height"
+            android:visibility="invisible" />
+
+        <ListView
+            android:id="@+id/teamListB"
+            android:layout_width="@dimen/player_info_layout_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_layout_small"
+            android:layout_marginRight="@dimen/padding_layout_small"
+            android:background="@color/colorNeutralStatistic"
+            android:divider="@color/teamBCenterColor"
+            android:dividerHeight="@dimen/list_view_divider_height" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/playByPlayContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/gameStatusTopPanelContainer"
+        android:layout_centerHorizontal="true">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/currentStatisticContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/statisticTypePanel"
+        android:layout_centerHorizontal="true">
+
+    </RelativeLayout>
+
+</RelativeLayout>

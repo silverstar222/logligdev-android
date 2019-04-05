@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/time_segment_item_width"
+    android:layout_height="@dimen/time_segment_panel_height"
+    android:padding="2dp">
+
+    <Button
+        android:id="@+id/addNewTimeSegmentButton"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="@dimen/clock_quarters_size"
+        android:layout_height="@dimen/clock_quarters_size"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/add_time_segment_border"
+        android:enabled="false"
+        android:text="@string/plus"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/time_segment_text_size" />
+
+    <TextView
+        android:id="@+id/addNewTimeSegmentTitle"
+        android:layout_width="@dimen/time_segment_item_width"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/addNewTimeSegmentButton"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/ot"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/time_segment_text_size"
+        android:textStyle="bold" />
+
+</RelativeLayout>

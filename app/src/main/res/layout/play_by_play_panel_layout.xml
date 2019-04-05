@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/current_statistic_panel_width"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <Button
+        android:id="@+id/openCloseCurrentGameStatisticsListButton"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/play_by_play_panel_effect"
+        android:text="Play By Play"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_normal" />
+
+    <ListView
+        android:id="@+id/currentGameStatisticsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/openCloseCurrentGameStatisticsListButton"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/play_by_play_panel_effect">
+
+    </ListView>
+
+</RelativeLayout>

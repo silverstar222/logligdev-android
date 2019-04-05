@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:id="@+id/inputItemsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/forgotRememberLayout"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:paddingEnd="170dp"
+        android:paddingStart="170dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:id="@+id/emailLayout"
+            android:layout_width="@dimen/panel_item_width"
+            android:layout_height="@dimen/panel_item_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@color/colorInputTextFieldBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/emailIcon"
+                android:layout_width="@dimen/panel_icon_size"
+                android:layout_height="@dimen/panel_icon_size"
+                android:layout_marginLeft="@dimen/input_view_inner_margin"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:src="@drawable/icon_email" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:background="@color/colorNeutralStatistic"
+                android:ems="15"
+                android:gravity="center_vertical"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/list_view_padding"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorLoginFont"
+                android:textSize="@dimen/text_size_normal2" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/passwordLayout"
+            android:layout_width="@dimen/panel_item_width"
+            android:layout_height="@dimen/panel_item_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/login_item_margin"
+            android:layout_marginLeft="@dimen/login_item_margin"
+            android:layout_marginRight="@dimen/login_item_margin"
+            android:layout_marginStart="@dimen/login_item_margin"
+            android:layout_weight="1"
+            android:background="@color/colorInputTextFieldBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/passwordIcon"
+                android:layout_width="@dimen/panel_icon_size"
+                android:layout_height="@dimen/panel_icon_size"
+                android:layout_marginLeft="@dimen/input_view_inner_margin"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:src="@drawable/password_icon" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:background="@color/colorNeutralStatistic"
+                android:ems="15"
+                android:gravity="center_vertical"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:padding="@dimen/list_view_padding"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorLoginFont"
+                android:textSize="@dimen/text_size_normal2" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/loginButton"
+            style="@style/button_text"
+            android:layout_width="@dimen/panel_item_width"
+            android:layout_height="@dimen/panel_item_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/app_button_orange"
+            android:onClick="login"
+            android:text="@string/login_action"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/forgotRememberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        android:paddingEnd="170dp"
+        android:paddingStart="170dp"
+        android:weightSum="3">
+
+        <View
+            android:layout_width="@dimen/panel_item_width"
+            android:layout_height="@dimen/panel_item_height"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/forgotPasswordButton"
+            android:layout_width="@dimen/panel_item_width"
+            android:layout_height="@dimen/panel_item_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/login_item_margin"
+            android:layout_marginLeft="@dimen/login_item_margin"
+            android:layout_marginRight="@dimen/login_item_margin"
+            android:layout_marginStart="@dimen/login_item_margin"
+            android:layout_weight="1"
+            android:background="@color/colorTransparent"
+            android:drawableLeft="@drawable/arrow_icon"
+            android:drawablePadding="@dimen/list_view_padding"
+            android:gravity="left|top"
+            android:onClick="forgotPassword"
+            android:padding="@dimen/list_view_padding"
+            android:text="@string/forgot_password"
+            android:textAllCaps="false"
+            android:textColor="@color/colorLoginFont"
+            android:textSize="@dimen/text_size_normal" />
+
+        <CheckBox
+            android:id="@+id/rememberMeCheckBox"
+            android:layout_width="@dimen/panel_item_width"
+            android:layout_height="@dimen/panel_item_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:button="@null"
+            android:buttonTint="@color/colorLoginFont"
+            android:checked="false"
+            android:drawableLeft="@drawable/app_checkbox"
+            android:drawablePadding="@dimen/list_view_padding"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/list_view_padding"
+            android:text="@string/remember_me"
+            android:textColor="@color/colorLoginFont"
+            android:textSize="@dimen/text_size_normal" />
+
+    </LinearLayout>
+</RelativeLayout>

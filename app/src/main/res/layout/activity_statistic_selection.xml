@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:padding="@dimen/statistic_selection_list_view_padding">
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="@dimen/statistic_selection_start_button_width"
+        android:layout_height="@dimen/statistic_selection_item_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="@dimen/statistic_selection_items_margin2"
+        android:layout_marginRight="@dimen/statistic_selection_items_margin2"
+        android:layout_marginTop="@dimen/statistic_selection_items_margin2"
+        android:background="@drawable/app_button_green"
+        android:text="@string/start"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/statistic_selection_font_size" />
+
+    <TextView
+        android:id="@+id/statisticSelectionTitle"
+        android:layout_width="@dimen/statistic_selection_preset_list_view_width"
+        android:layout_height="@dimen/statistic_selection_item_height"
+        android:layout_alignLeft="@+id/statisticSelectionContext"
+        android:layout_alignStart="@+id/statisticSelectionContext"
+        android:layout_below="@+id/startButton"
+        android:layout_marginTop="@dimen/statistic_selection_items_margin2"
+        android:gravity="center_vertical|start"
+        android:text="@string/statistics_plans"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/statistic_selection_title_font_size" />
+
+    <Button
+        android:id="@+id/addPresetButton"
+        android:layout_width="@dimen/statistic_selection_add_remove_button_width"
+        android:layout_height="@dimen/statistic_selection_item_height"
+        android:layout_alignLeft="@+id/statisticSelectionContext"
+        android:layout_alignStart="@+id/statisticSelectionContext"
+        android:layout_below="@+id/statisticSelectionTitle"
+        android:background="@drawable/statistic_preset_button"
+        android:text="@string/add_set"
+        android:textAllCaps="false"
+        android:textColor="@color/colorOrangeCenter"
+        android:textSize="@dimen/text_size_normal" />
+
+    <Button
+        android:id="@+id/deletePresetButton"
+        android:layout_width="@dimen/statistic_selection_add_remove_button_width"
+        android:layout_height="@dimen/statistic_selection_item_height"
+        android:layout_below="@+id/statisticSelectionTitle"
+        android:layout_marginLeft="@dimen/statistic_selection_items_margin"
+        android:layout_marginStart="@dimen/statistic_selection_items_margin"
+        android:layout_toEndOf="@+id/addPresetButton"
+        android:layout_toRightOf="@+id/addPresetButton"
+        android:background="@drawable/statistic_preset_button"
+        android:text="@string/delete_set"
+        android:textAllCaps="false"
+        android:textColor="@color/colorOrangeCenter"
+        android:textSize="@dimen/text_size_normal" />
+
+    <CheckBox
+        android:id="@+id/selectAllStatisticsCheckBox"
+        android:layout_width="@dimen/statistic_selection_grid_view_item_width"
+        android:layout_height="@dimen/statistic_selection_item_height"
+        android:layout_alignLeft="@+id/statisticSelectionContext"
+        android:layout_alignStart="@+id/statisticSelectionContext"
+        android:layout_below="@+id/statisticSelectionTitle"
+        android:layout_marginLeft="@dimen/statistic_selection_select_all_margin_left"
+        android:layout_marginStart="@dimen/statistic_selection_select_all_margin_left"
+        android:background="@color/presetNotSelected"
+        android:button="@null"
+        android:drawableLeft="@drawable/app_checkbox"
+        android:drawablePadding="@dimen/list_view_padding"
+        android:drawableStart="@drawable/app_checkbox"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="@dimen/statistic_selection_list_view_padding"
+        android:paddingStart="@dimen/statistic_selection_list_view_padding"
+        android:text="@string/all"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/statistic_selection_font_size" />
+
+    <Button
+        android:id="@+id/savePresetButton"
+        android:layout_width="@dimen/statistic_selection_grid_view_item_width"
+        android:layout_height="@dimen/statistic_selection_item_height"
+        android:layout_above="@+id/statisticSelectionContext"
+        android:layout_marginLeft="@dimen/list_view_divider_height"
+        android:layout_marginStart="@dimen/list_view_divider_height"
+        android:layout_toEndOf="@+id/selectAllStatisticsCheckBox"
+        android:layout_toRightOf="@+id/selectAllStatisticsCheckBox"
+        android:background="@drawable/app_button_orange"
+        android:text="@string/save_presets"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/statistic_selection_font_size" />
+
+    <!-- Statistics Context -->
+    <LinearLayout
+        android:id="@+id/statisticSelectionContext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addPresetButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/statistic_selection_items_margin2"
+        android:layout_marginTop="@dimen/statistic_selection_items_margin"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/presetsListView"
+            android:layout_width="@dimen/statistic_selection_preset_list_view_width"
+            android:layout_height="wrap_content"
+            android:divider="@color/colorTransparent"
+            android:dividerHeight="@dimen/list_view_divider_height" />
+
+        <GridView
+            android:id="@+id/statisticsGridView"
+            android:layout_width="@dimen/statistic_selection_grid_view_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/list_view_divider_height"
+            android:layout_marginStart="@dimen/list_view_divider_height"
+            android:columnWidth="@dimen/statistic_selection_grid_view_item_width"
+            android:horizontalSpacing="@dimen/statistic_selection_grid_view_spacing"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:verticalSpacing="@dimen/list_view_divider_height" />
+
+    </LinearLayout>
+
+</RelativeLayout>

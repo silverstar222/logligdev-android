@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/clock_start_pause_size"
+    android:layout_height="@dimen/clock_start_pause_size">
+
+    <Button
+        android:id="@+id/stopClockButton"
+        android:layout_width="@dimen/clock_start_pause_size"
+        android:layout_height="@dimen/clock_start_pause_size"
+        android:background="@drawable/end_game_button"
+        android:text="@string/end_game"
+        android:textAllCaps="false"
+        android:textColor="@color/colorOrangeCenter"
+        android:textStyle="bold" />
+
+</RelativeLayout>

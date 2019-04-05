@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/time_segment_item_width"
+    android:layout_height="@dimen/time_segment_panel_height"
+    android:padding="2dp">
+
+    <TextView
+        android:id="@+id/timeSegmentNumber"
+        android:layout_width="@dimen/clock_quarters_size"
+        android:layout_height="@dimen/clock_quarters_size"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/time_segment_border"
+        android:gravity="center"
+        android:text="1"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/time_segment_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timeSegmentScore"
+        android:layout_width="@dimen/time_segment_font_text_view_width"
+        android:layout_height="@dimen/time_segment_font_text_view_height"
+        android:layout_below="@+id/timeSegmentNumber"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/_00_00"
+        android:textColor="@color/colorGreen"
+        android:textSize="@dimen/time_segment_text_size"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/timeSegmentFoul"
+        android:layout_width="@dimen/time_segment_font_text_view_width"
+        android:layout_height="@dimen/time_segment_font_text_view_height"
+        android:layout_below="@+id/timeSegmentScore"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/_0_0"
+        android:textColor="@color/colorOrangeDark"
+        android:textSize="@dimen/time_segment_text_size"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    android:padding="@dimen/game_selection_list_view_padding">
+
+    <ListView
+        android:id="@+id/gamesListView"
+        android:layout_width="@dimen/game_selection_list_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/list_top_margin"
+        android:divider="@color/colorTransparent"
+        android:dividerHeight="@dimen/list_view_divider_height"
+        android:padding="@dimen/list_view_padding" />
+
+</RelativeLayout>
